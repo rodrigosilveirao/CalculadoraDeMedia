@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculado de Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de medias</h1>
+        </header>
+        <form>
+            <input type="text" required placeholder="Nome da atividade">
+            <input type="number" required placeholder="Nota da atividade" min="0" max="10">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0"> <!--Este é o elemento principal que define uma tabela HTML.-->
+            <thead><!--Este elemento define o cabeçalho da tabela.-->
+                <tr> <!--Este elemento define uma linha na tabela.-->
+                    <th>Nome da atividade</th> <!--Este elemento define uma célula de cabeçalho na tabela.-->
+                    <th>Nota da atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody><!--Este elemento define o corpo da tabela.-->
+                <tr>
+                    <td>Atividade 1</td> <!--Este elemento define uma célula de dados na tabela.-->
+                    <td>7</td>
+                    <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Media final</td>
+                    <td>7</td>
+                    <td><span class="resultado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
