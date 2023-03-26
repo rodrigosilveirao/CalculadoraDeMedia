@@ -16,9 +16,9 @@
             <img src="./images/logo.png" alt="capelo e diploma">
             <h1>Calculadora de medias</h1>
         </header>
-        <form>
-            <input type="text" required placeholder="Nome da atividade">
-            <input type="number" required placeholder="Nota da atividade" min="0" max="10">
+        <form id="formAtividade">
+            <input type="text" id="nomeAtividade" required placeholder="Nome da atividade">
+            <input type="number" id="notaAtividade" required placeholder="Nota da atividade" min="0" max="10">
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0"> <!--Este é o elemento principal que define uma tabela HTML.-->
@@ -30,17 +30,17 @@
                 </tr>
             </thead>
             <tbody><!--Este elemento define o corpo da tabela.-->
-                <tr>
-                    <td>Atividade 1</td> <!--Este elemento define uma célula de dados na tabela.-->
+                <!--<tr>
+                    <td>Atividade 1</td> |Este elemento define uma célula de dados na tabela.|
                     <td>7</td>
                     <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
-                </tr>
+                </tr>-->
             </tbody>
             <tfoot>
                 <tr>
                     <td>Media final</td>
-                    <td>7</td>
-                    <td><span class="resultado">Aprovado</span></td>
+                    <td id="mediaFinalValor">---</td>
+                    <td id="mediaFinalResultado">---</td>
                 </tr>
             </tfoot>
         </table>
@@ -53,6 +53,6 @@
 
 
 
-    
+<script src="./scripts.js"></script>   
 </body>
 </html>
