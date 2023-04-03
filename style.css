@@ -95,4 +95,7 @@ table img{
 
 .reprovado{
     background-color: red;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
 }
